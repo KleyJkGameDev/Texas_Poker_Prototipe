@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'italiana', serif;
+  background-color: #121619;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#login-screen h1 {
+  font-family: 'italiana', serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.active {
+  display: flex;
+}
+
+h1 {
+  font-size: 66px;
+  margin-bottom: 20px;
+  font-family: 'italiana', serif;
+}
+
+.card-img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.form-box {
+  background-color: #1c1f22;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #292d31;
+  color: white;
+}
+
+.form-box input::placeholder {
+  color: #aaa;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00ff99;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-box button:hover {
+  background-color: #00e68a;
+}
+
+.link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.link a {
+  color: #00ff99;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.profile-card {
+  background-color: #1c1f22;
+  padding: 0px;
+  padding-bottom: 0px;
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  background-image: url("/sources/bg.webp");
+  background-size: auto;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.status{
+  background-color: #1c1f22;
+  padding: 0px 2px 2px 2px;
+  padding-bottom: 10px;
+  margin-bottom: 0%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.img-icon {
+  margin-top: 50px;
+  width: 80px;
+  height: 80px;
+}
+
+
+.img-profile {
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  position: absolute;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  background-color: #666;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.card-illustration {
+  width: 150px;
+  margin: 20px 0;
+}
+
+.button-group button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00ff99;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #00e68a;
+}

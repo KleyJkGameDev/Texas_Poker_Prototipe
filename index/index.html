@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Texas Poker</title>
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- TELA 1: LOGIN -->
+    <div id="loginScreen" class="screen active">
+      <h1>Texas Poker</h1>
+      <img src="/sources/cartas-de-poquer-caindo-ases-ilustracao-de-icone-vetorial-realista (1).png" alt="Cartas" class="card-img">
+      <div class="form-box">
+        <input type="text" placeholder="Email ou Usuário" id="loginUser">
+        <input type="password" placeholder="Senha" id="loginPass">
+        <button onclick="goTo('homeScreen')">Entrar</button>
+        <div class="link">Não tem uma conta? <a href="#" onclick="goTo('registerScreen')">Cadastrar-se</a></div>
+      </div>
+    </div>
+
+    <!-- TELA 2: CADASTRO -->
+    <div id="registerScreen" class="screen">
+      <h1>Texas Poker</h1>
+      <img src="/sources/cartas-de-poquer-caindo-ases-ilustracao-de-icone-vetorial-realista.png" alt="Cartas" class="card-img">
+      <div class="form-box">
+        <input type="text" placeholder="Nome">
+        <input type="text" placeholder="CPF">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Senha">
+        <button onclick="goTo('loginScreen')">Cadastrar</button>
+      </div>
+    </div>
+
+    <!-- TELA 3: HOME DO JOGADOR -->
+    <div id="homeScreen" class="screen">
+      <div class="profile-card">
+        
+        <!-- <div class="profile-pic"></div> -->
+        <div class="img-icon-div"><img src="/sources/ghost.png" alt="" class="img-icon"></div>
+        <div class="status">
+          <p><strong>Nível:</strong> 200 &nbsp;&nbsp;&nbsp; <strong>Saldo:</strong> 3000$</p>
+          <h2>Username</h2>
+          <p>18 anos<br>Biografia (Lorem ipsum dolor)</p>
+          <button style="margin-top: 10px; background-color: #2cefef; border-radius: 3%; 
+          border: none; cursor: pointer; padding: 5px;">Adicionar Saldo</button>
+        </div>
+      </div>
+
+      <img src="/sources/jogo-de-cartas.png" alt="Cartas" class="card-illustration">
+      <div class="button-group">
+        <button onclick="alert('Ir para Jogo')">Jogar</button>
+        <button onclick="goTo('loginScreen')">Sair</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function goTo(screenId) {
+      document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+      document.getElementById(screenId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
